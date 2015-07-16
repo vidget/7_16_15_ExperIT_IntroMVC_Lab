@@ -18,6 +18,16 @@ namespace _7_16_15_ExperIT_IntroMVC_Lab
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+
+            routes.MapRoute(
+            name: "Hello",
+            url: "{controller}/{action}/{name}/{id}"
+            );
+
+
+
+
         }
     }
 }

@@ -8,6 +8,19 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
+
+
+
+    @using (Html.BeginForm())
+    {
+    <p>
+        Search for Movie: @Html.TextBox("SearchString") <br /><br/>
+        <input type="submit" value="Filter" />
+    </p>
+    }
+
+
+
 </p>
 <table class="table">
     <tr>
@@ -46,6 +59,6 @@
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
     </tr>
-}
+}<input id="Button1" type="button" value="button" />
 
 </table>
